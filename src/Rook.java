@@ -45,8 +45,8 @@ public class Rook extends ChessPiece{
                         return false;
                     else return !chessBoard.board[toLine][toColumn].getColour ().equals ( this.colour) && chessBoard.board[toLine][toColumn]!=this;
                 }else return true;
-            }
-        }
+            }else return false;
+        }else return false;
     }
     @Override
     public String getSymbol() {
